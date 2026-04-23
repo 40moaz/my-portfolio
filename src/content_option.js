@@ -95,7 +95,7 @@ const dataportfolio = [
   {
     img: "https://moaz-a.surge.sh/assets/restaurant-Bx3X7N-V.png",
     description:
-      "A modern food ordering .application that allows users to explore menus, select meals, and place orders easily.",
+      "A modern food ordering application that allows users to explore menus, select meals, and place orders easily.",
     link: "https://40moaz.github.io/food/",
   },
   {
