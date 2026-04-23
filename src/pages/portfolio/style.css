@@ -1,4 +1,4 @@
-.po_items_ho {
+/* .po_items_ho {
     column-width: 15em;
     -moz-column-width: 15em;
     -webkit-column-width: 15em;
@@ -77,4 +77,61 @@
 
 .po_item .content a:hover {
     text-decoration: none;
+} */
+
+.masonry-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.masonry-item {
+  position: relative;
+  height: 250px;
+  border-radius: 16px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.masonry-item:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.masonry-content {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.masonry-item:hover .masonry-content {
+  opacity: 1;
+}
+
+.masonry-content p {
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.view-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 14px;
+  background: #fff;
+  color: #000;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
 }
